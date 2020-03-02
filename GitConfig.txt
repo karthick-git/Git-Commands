@@ -1,0 +1,25 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Karthick Srinivasan
+	email = 
+[alias]  
+a = add  
+aa = add . 
+cm = commit -m 
+b = branch
+s = status
+p = push
+pl = pull
+sh = stash
+cor = remote set-url origin
+co = checkout
+f = fetch
+i = init
+plod = pull origin develop
+plom = pull origin master
+cl = clone
+wow = log --all --graph --decorate --oneline --simplify-by-decoration
